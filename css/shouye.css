@@ -1,0 +1,268 @@
+body {
+
+    position: relative;
+    background-image: url(../uploads/zhy/大背景.jpg);
+    /* overflow-X: hidden; */
+    /* overflow: hidden; */
+
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 头部 */
+.header {
+    position: relative;
+    height: 1100px;
+
+
+}
+
+.header>a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+/* 整体背景 */
+.vid {
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+
+    position: absolute;
+    top: 20px;
+    left: 282px;
+}
+
+.wunv {
+    position: absolute;
+    bottom: -90px;
+    right: -80px;
+    z-index: 3;
+}
+
+.wunv img {
+    position: absolute;
+    bottom: 0;
+    right: 29px;
+    z-index: 9999;
+}
+
+
+
+
+/* 页面主题公告栏 */
+.main {
+    width: 1200px;
+    height: 550px;
+    position: absolute;
+    top: 562px;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    background-image: url(../uploads/zhy/main.png);
+    /* background-size: 600px 300px; */
+}
+
+/* 导航部分 */
+.header li {
+    position: relative;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav1 {
+    /* position: absolute; */
+    left: 334px;
+    top: 50px;
+    width: 185px;
+    height: 60px;
+}
+
+.nav1:hover {
+    background-image: url(../uploads/zhy/sprit.png);
+    background-position: 0px 123px;
+
+}
+
+.nav1 a {
+    position: absolute;
+    left: 50px;
+    top: 18px;
+    width: 92px;
+    height: 25px;
+    background-image: url(../uploads/zhy/sprit.png);
+    background-position: 0px 366px;
+}
+
+.nav2 {
+    position: absolute;
+    /* z-index: 999; */
+    left: 282px;
+    top: -72px;
+    width: 258px;
+    height: 270px;
+}
+
+/* .nav2-hover{
+ 
+    position: absolute;
+    left:98px;
+    top: 113px;
+    z-index: 99;
+    width: 64px;
+    height: 64px;
+    background-image: url(../uploads/zhy/sprit.png);
+    background-position:-182px 390px ;
+} */
+.nav2 a:hover {
+    position: absolute;
+    left: 2px;
+    top: 6px;
+    background-image: url(../uploads/zhy/sprit.png);
+    background-position: -321px 794px;
+}
+
+.nav2 a {
+    position: absolute;
+    left: 2px;
+    top: 6px;
+    z-index: 2;
+    width: 258px;
+    height: 270px;
+    background-image: url(../uploads/zhy/sprit.png);
+
+    /* background-size: 75%  75% ; */
+    background-position: -11px 794px;
+}
+
+.nav2-bj {
+    position: absolute;
+    left: 154px;
+    top: 32px;
+    width: 100px;
+    height: 80px;
+    z-index: 3;
+    background-image: url(../uploads/zhy/sprit.png);
+    background-size: 750px 750px;
+    /* background-size: 75%  75% ; */
+    background-position: 20px 288px;
+}
+
+.nav3 {
+    position: absolute;
+    left: 226px;
+    top: 50px;
+    width: 185px;
+    height: 60px;
+}
+
+.nav3:hover {
+    background-image: url(../uploads/zhy/sprit.png);
+    background-position: 0px 123px;
+}
+
+.nav3 a {
+    position: absolute;
+    left: 48px;
+    top: 18px;
+    width: 92px;
+    height: 25px;
+    background-image: url(../uploads/zhy/sprit.png);
+    background-position: -335px 365px;
+}
+
+/* 公告栏 新闻部分 */
+.news {
+    position: relative;
+}
+
+.new1 {
+    position: relative;
+    position: absolute;
+    left: 128px;
+    top: 140px;
+}
+
+.new2 {
+    position: relative;
+    position: absolute;
+    left: 434px;
+    top: 160px;
+    width: 320px;
+    height: 250px;
+    background-image: url(../uploads/zhy/news.png);
+}
+
+.new3 {
+    position: relative;
+    position: absolute;
+    left: 740px;
+    top: 140px;
+    width: 320px;
+    height: 250px;
+    background-image: url(../uploads/zhy/news.png);
+}
+
+/* 触碰旋转 */
+.new1:hover,
+.new2:hover,
+.new3:hover {
+    transform: rotateZ(-3deg);
+}
+
+/* 新闻部分的图片 */
+.new1 img,
+.new2 img,
+.new3 img {
+    position: absolute;
+    left: 24px;
+    top: 20px;
+    transform: rotate();
+}
+
+/* 新闻部分图片的背景 */
+.new1-1,
+.new2-1,
+.new3-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../uploads/zhy/news.png);
+    z-index: 1;
+}
+
+/* 新闻部分文字部分 */
+.new1 p,
+.new2 p,
+.new3 p {
+    position: absolute;
+    top: 200px;
+    left: -2px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    color: #614326;
+    text-align: center;
+}
+
+.new1,
+.new2,
+.new3 {
+    width: 320px;
+    height: 250px;
+}

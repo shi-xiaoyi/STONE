@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="创建暴雪游戏通行证" />
+    <meta name="theme-color" content="#003564" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/login/favicon.ico" type="image/x-icon" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/login.js"></script>
+    <link rel="stylesheet" href="../font_1975810_8c28gv7w36f/iconfont.css">
+    <!-- 在网页标题左侧显示图标  -->
+    <link
+      rel="shortcut icon"
+      href="../images/login/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- 在收藏夹显示图标  -->
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <title>创建暴雪游戏通行证</title>
+  </head>
+  <body>
+    <div class="step-container">
+      <!-- 登录框 -->
+      <div class="step">
+        <div class="step_content">
+          <h1 align="center">开始</h1>
+          <p>
+            未满18岁的用户将受到未成年人保护系统的限制，包括游戏时间限制和消费限制等。
+            <span class="step__tooltip">
+              <span class="step__tooltip__anchor">
+                <span class="step__tooltip__description">
+                  根据中国相关法律法规，需要有效的身份验证后才能注册。未满足年龄要求的用户将受到游戏时间和现金交易的限制。 
+                  <a href="https://www.battlenet.com.cn/support/zh/article/205278" class="iconfont icon-zhuanfadaoyouxiang">了解详情 </a>
+                </span>
+              </span>
+              <span class="step__tooltip__title" >了解更多</span>
+            </span>
+            
+          </p>
+          <form action="">
+            <div class="form_country">
+              <select name="" id="" disabled="disabled">
+                <option value="">中国</option>
+              </select>
+              <div class="one"></div>
+              <div class="two"></div>
+            </div>
+            <div class="id">
+                <input type="text" placeholder="身份证号码">
+            </div>
+            <p class="step__field-errors-item">需要填写身份证号码</p>
+            <button type="button" onClick="submitAction();return false;">继续</button>
+          </form>
+          <div class="step__hr">
+              <p>------------------- 或以其他方式注册 -------------------</p>
+          </div>
+          <div class="wy">
+              <a href="https://reg.163.com/open/oauth2/authorize.do?client_id=2985644329&response_type=code&state=AXKC9dEzI2vhSenk4Zs0SfwImGbx__eDPR1dZP3Cp46DNYK4nUEXCYmJEHCToqvwgrRzzAemiSVxPnn_gI3otywidkwSxeAzuWlh2a8nZJhfG9Ctb1wWNKuOIoF_EdqucQ%3D%3D&redirect_uri=https%3A%2F%2Fwww.battlenet.com.cn%2Flogin%2Fsignin%2Fnetease&scope">
+        
+              </a>
+          </div>
+          <div class="step__block">
+            已经有通行证了？ 
+            <a href="https://www.battlenet.com.cn/login/zh/">登录</a>
+          </div>
+        </div>
+        <ul>
+            <li class="step__pagination__item"></li>
+            <li class="step__pagination__item"></li>
+            <li class="step__pagination__item"></li>
+            <li class="step__pagination__item"></li>
+            <li class="step__pagination__item"></li>
+            <li class="step__pagination__item"></li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- 下半部分 -->
+    <div class="NavbarFooter">
+      <div class="NavbarFooter-logoContainer">
+        <a href="https://cn.blizzard.com/zh-cn/"></a>
+      </div>
+      <div class="NavbarFooter-links">
+        <a href="https://careers.blizzard.com/">工作机会</a>
+        丨 
+        <a href="https://www.blizzard.com/company/about/">关于</a>  
+        丨 
+        <a href="https://www.battlenet.com.cn/support/">支持</a> 
+        丨 
+        <a href="https://blizzard.gamespress.com/">媒体中心</a> 
+        丨
+        <a href="https://develop.battlenet.com.cn/">API</a> 
+        丨
+        <a href="http://wow.blizzard.cn/services/security/">安全中心</a>
+      </div>
+      <div class="NavbarFooter-copyright">©2020暴雪娱乐有限公司版权所有。</div>
+      <div class="NavbarFooter-trademark NavbarFooter-copyright">
+        在此提及的其他所有
+        <a href="https://cn.blizzard.com/zh-cn/legal/b04001c4-dc81-480d-a475-5e276e241e4f/%E7%AC%AC%E4%B8%89%E6%96%B9%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%AC%BE">商标</a>
+        均是其各自所有人的财产。
+      </div>
+      <div class="NavbarFooter-trademark NavbarFooter-copyright">由上海网之易网络科技发展有限公司运营。</div>
+      <div class="NavbarFooter-link NavbarFooter-copyright " >
+        <a href="https://www.blizzardgames.cn/zh/legal-cn/privacy">隐私</a>
+        <a href="https://www.blizzardgames.cn/zh/legal-cn/">法律</a>
+        <a href="https://www.blizzardgames.cn/zh/legal-cn/eula">条款</a>
+      </div>
+      <div class="NavbarFooter-legal" style="padding-bottom: 30px;">
+        <div class="NavbarFooter-additionalLegal">
+          <div class="NavbarFooter-additionalLegalLine">
+            <a href="http://www.battlenet.com.cn/static/local-common/images/legal/cn/license.png" class="NavbarFooter-additionalLegalLine">沪网文〔2017〕9633-727号</a>
+          </div>丨
+          <div class="NavbarFooter-additionalLegalLine">
+            <a href="http://blz.nos.netease.com/1/frame/cprt/appreciation-licence.pdf" class="NavbarFooter-additionalLegalLine">增值电信业务经营许可证编号：沪B2－20080012</a>
+          </div>丨
+          <div class="NavbarFooter-additionalLegalLine">
+            <a href="http://beian.miit.gov.cn/" class="NavbarFooter-additionalLegalLine">沪ICP备: 沪B2－20080012</a>
+          </div>
+        </div>
+        <div class="NavbarFooter-additionalLegal">
+          <div class="NavbarFooter-additionalLegalLine">互联网违法和不良信息举报电话：0571-28090163</div>丨
+          <div class="NavbarFooter-additionalLegalLine">沪公网安备：31011502002167</div>丨
+          <div class="NavbarFooter-additionalLegalLine">
+            <a href="https://www.12377.cn/">网上有害信息专区</a>
+          </div>
+        </div>
+        <div class="NavbarFooter-additionalLegal">
+          <div class="NavbarFooter-additionalLegalLine">
+            <a href="https://www.battlenet.com.cn/support/zh/article/280" style="color: #fff;">适龄提示：适合13岁及以上使用 家长监护工程></a>
+          </div>丨
+          <div class="NavbarFooter-additionalLegalLine">
+            <a href="http://blz.nos.netease.com/1/frame/cprt/self-discipline.pdf" style="color: #fff;">上海市网络游戏行业自律公约</a>
+          </div>
+        </div>
+        <div class="NavbarFooter-additionalLegal">
+          <div class="NavbarFooter-additionalLegalLine">上海市张江高科技园区碧波路690号5号楼301-A</div>丨
+          <div class="NavbarFooter-additionalLegalLine">客服电话：0571-28090163</div>
+        </div>
+        <div class="NavbarFooter-additionalLegal NavbarFooter-additionalLegalIcons">
+          <a href="http://sh.cyberpolice.cn/infoCategoryListAction.do?act=initjpg">
+          <img src="../images/login/icon3.gif" alt="" class="NavbarFooter-additionalLegalIcon">
+          </a>
+          <a href="http://www.zx110.org/">
+          <img src="../images/login/icon1.gif" alt="" class="NavbarFooter-additionalLegalIcon">
+          </a>
+          <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20111011175417664">
+          <img src="../images/login/icon2.gif" alt="" class="NavbarFooter-additionalLegalIcon">
+          </a>
+          <a href="http://www.shjbzx.cn/">
+          <img src="../images/login/icon4.gif" alt="" class="NavbarFooter-additionalLegalIcon">
+          </a>
+          <a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/AB216B1F9AA8456582ED680F589334A3">
+          <img src="../images/login/icon5.png" alt="" class="NavbarFooter-additionalLegalIcon">
+          </a>
+        </div>
+        <div class="NavbarFooter-additionalLegal">
+          <div class="NavbarFooter-additionalLegalLine">健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当</div>
+        </div>
+        <div class="NavbarFooter-additionalLegal">
+          <div class="NavbarFooter-additionalLegalLine">适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

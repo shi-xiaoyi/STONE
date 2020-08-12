@@ -1,0 +1,29 @@
+body,
+h3,
+h4,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    border: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}

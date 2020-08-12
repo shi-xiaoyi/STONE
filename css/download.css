@@ -1,0 +1,303 @@
+.wraper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../images/download/bg1.jpg) no-repeat 50% 0 fixed;
+    background-size: cover;
+}
+
+/* header */
+
+.header {
+    height: 275px;
+    position: relative;
+    width: 1024px;
+    left: 50%;
+    margin-left: -512px;
+    z-index: 900;
+}
+.header h1.logo {
+    position: absolute;
+    width: 350px;
+    height: 184px;
+    top: 32px;
+    left: 10px;
+    z-index: 9000;
+    background: url(../images/download/navbar_hs-logo.png)  0 50% no-repeat;
+}
+.header h1.logo a {
+    width: 100%;
+    height: 100%;
+    display: block; 
+}
+.header .search {
+    box-sizing: border-box;
+    height: 42px;
+    position: absolute;
+    right: 47px;
+    top: 200px;
+    width: 302px;
+    z-index: 1001;
+}
+.header .search input {
+    box-sizing: border-box;
+    background: rgba(255,255,255,.3);
+    border: 1px solid #8bb6ad;
+    color: #8bb6ad;
+    font-size: 14px;
+    height: 42px;
+    line-height: 26px;
+    padding: 7px 40px 7px 10px;
+    width: 250px;
+}
+.header .search a {
+    height: 25px;
+    position: absolute;
+    right: 59px;
+    top: 12px;
+    width: 25px;
+    background: url(../images/download/search.png) no-repeat;
+}
+
+/* container */
+
+.container {
+    width: 1024px;
+    position: relative;
+    left: 50%;
+    margin-left: -512px;
+    height: 1300px;
+    z-index: 2;
+    padding-bottom: 100px;
+}
+
+.container .wraperCon {
+    margin: 0 auto;
+    width: 1024px;
+    background: url(../images/download/layout_con-bg.png) repeat-y 50% 0;
+    position: relative;
+    padding-bottom: 41px;
+}
+
+.container .wraperCon .ui-breadcrumbs {
+    height: 46px;
+    color: #150603;
+    padding: 22px 0 0 56px;
+    position: relative;
+    z-index: 2;
+}
+
+.container .wraperCon .ui-breadcrumbs a:nth-of-type(1):hover {
+    color: #DB6800;
+    border-bottom: 1px dotted #DB6800;
+}
+
+.container .wraperCon .ui-breadcrumbs a:nth-of-type(2) {
+    border-bottom: 1px dotted #DB6800;
+}
+
+.container .wraperCon .version {
+    width: auto;
+    height: 308px;
+    margin: -4px auto 0;
+    position: relative;
+    background: url(../images/download/landing_17_v2_download.png) no-repeat 0 0;
+}
+
+.container .wraperCon .download {
+    width: auto;
+    height: 734px;
+    margin: -2px auto -230px;
+    position: relative;
+    color: #000;
+    padding: 40px 100px;
+    background: url(../images/download/download-bg-190926.png) 50% 0 no-repeat;
+}
+
+.container .wraperCon .download .pc {
+    margin-bottom: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container .wraperCon .download .pc .m_dowload h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.btn {
+    width: 216px;
+    height: 56px;
+    margin: 0 0 15px;
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    float: left;
+    margin-right: 38px;
+}
+
+.pcBtn {
+    background: url(../images/download/pc-download-btn.png), no-repeat;
+}
+
+.ios-pc-btn {
+    background: url(../images/download/pc-ios-download-btn.png) no-repeat;
+}
+
+.container .wraperCon .download .pc .m_hsoa h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.container .wraperCon .download .mobile h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.container .wraperCon .download .mobile .mobileWrap {
+    width: 900px;
+}
+
+.container .wraperCon .download .mobile .mobileWrap>div {
+    float: left;
+    width: 30%;
+    position: relative;
+    min-height: 100px;
+}
+
+.iosBtn {
+    background: url(../images/download/download_ios-btn.png) no-repeat;
+}
+
+.adBtn1 {
+    background: url(../images/download/android-btn-1.png) no-repeat;
+}
+
+.adBtn2 {
+    background: url(../images/download/android-btn-2.png) no-repeat;
+}
+
+.container .wraperCon .download .mobile .dlText {
+    width: 327px;
+    height: 203px;
+    padding: 40px 0 0 47px;
+}
+
+.container .wraperCon .download .mobile .dlText h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.container .wraperCon .download .mobile .dlText ul li {
+    font-size: 16px;
+    margin: 5px 0;
+    display: list-item;
+    list-style: disc;
+}
+
+.hot {
+    padding: 90px 60px 0 53px;
+}
+
+.qa {
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.f-qa-icon {
+    background: url(../images/download/download_brm_sprite2.png) no-repeat scroll -490px -242px;
+    height: 100px;
+    width: 164px;
+    left: 50%;
+    margin-left: -82px;
+    position: absolute;
+    top: -11px;
+}
+
+.wraperConBot {
+    width: 1024px;
+    height: 41px;
+    left: 50%;
+    margin-left: -512px;
+    position: relative;
+    background: url(../images/download/layout_con-bg-bot.png) no-repeat 50% 0;
+}
+
+.qa a {
+    width: 173px;
+    height: 28px;
+    line-height: 27px;
+    display: inline-block;
+    color: #fff;
+    margin-right: 17px;
+    text-shadow: 0 0 2px #000;
+    background: url(../images/download/download_purple_btn.png) 50% 0 no-repeat;
+}
+/* 侧边栏 */
+.list-nav {
+    /* overflow: hidden; */
+    z-index: 999;
+    width: 82px;
+    height: 82px;
+    position: fixed;
+    right: 30px;
+    bottom: 65px;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 82px;
+    text-align: center;
+    color: #ffb100;
+    font-weight: 700;
+    background-color: rgba(96, 52, 18, .6);
+  }
+  
+  .list-nav img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  #plug-in {
+    bottom: 395px;
+  }
+  
+  #mobile-app {
+    perspective: 500;
+    bottom: 285px;
+  
+  }
+  
+  .fanzhuang {
+    position: relative;
+    height: 100%;
+    /* background-color: green; */
+    transform-style: preserve-3d;
+    transition: all 1s;
+  }
+  
+  #mobile-app img:first-child {
+    /* display: none; */
+    transform: translateZ(42px);
+    z-index: 2;
+  }
+  
+  #mobile-app img:last-child {
+    /* display: none; */
+    transform: translateY(41px) rotateX(90deg);
+  }
+  
+  .roll {
+    transform: rotateX(90deg)
+  }
+  
+  #weibo {
+    bottom: 175px;
+  }

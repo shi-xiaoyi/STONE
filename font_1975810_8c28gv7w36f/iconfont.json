@@ -1,0 +1,16 @@
+{
+  "id": "1975810",
+  "name": "炉石传说",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12829970",
+      "name": "转发到邮箱",
+      "font_class": "zhuanfadaoyouxiang",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    }
+  ]
+}

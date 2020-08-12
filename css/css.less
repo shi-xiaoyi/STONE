@@ -1,0 +1,704 @@
+body {
+    background: url(../images/tjf/bg1.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 1920px 925px;
+    background-position: center top;
+
+    .header-nav {
+        background-color: transparent !important;
+    }
+
+    .logo {
+        position: relative;
+        height: 193px;
+
+        img {
+            position: absolute;
+            left: 173px;
+            top: -9px;
+        }
+
+        .search {
+            position: absolute;
+            right: 183.5px;
+            top: 107px;
+            box-shadow: 0 0 1px #db6800;
+
+            input {
+                box-sizing: border-box;
+                height: 41px;
+                width: 302px;
+                padding: 7px 40px 7px 10px;
+                outline: none;
+                vertical-align: middle;
+                background-color: rgba(58, 58, 58, .3);
+                color: #8bb6ad;
+
+                &::-webkit-input-placeholder {
+                    /* WebKit browsers 适配谷歌 */
+                    color: #8bb6ad;
+                }
+            }
+
+            a {
+                position: absolute;
+                top: 8.5px;
+                right: 10px;
+                width: 24px;
+                height: 25px;
+                background: url(../images/tjf/search.png);
+            }
+
+        }
+    }
+
+    .nav {
+        position: relative;
+        margin: 0 auto;
+        width: 1024px;
+        z-index: 100;
+
+        .spite {
+            position: absolute;
+            top: -14px;
+            left: -27px;
+            width: 75px;
+            height: 75px;
+            background: url(../images/tjf/spite.png) no-repeat -169px -40px;
+            z-index: 10;
+        }
+
+        ul {
+            background: url(../images/tjf/table.jpg) no-repeat 0 0px;
+            padding-left: 50px;
+
+            .left-spite {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -50px;
+                    left: -38px;
+                    width: 100px;
+                    height: 150px;
+                    background: url(../images/tjf/spite.png) no-repeat 0px 0px;
+                }
+            }
+
+            .nav-li {
+                float: left;
+                height: 51px;
+                width: 117.5px;
+
+                &:nth-of-type(2) {
+                    position: relative;
+                }
+
+                .new {
+                    border-image: url(../images/tjf/button.png) 6 fill/auto;
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    top: -12px;
+                    transform: translateX(-50%);
+                    color: #fff;
+                    width: 42px;
+                    height: 26px;
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 26px;
+                    text-shadow: #000 2px 0 0, #000 1.75517px 0.95885px 0, #000 1.0806px 1.68294px 0, #000 0.14147px 1.99499px 0, #000 -0.83229px 1.81859px 0, #000 -1.60229px 1.19694px 0, #000 -1.97998px 0.28224px 0, #000 -1.87291px -0.70157px 0, #000 -1.30729px -1.5136px 0, #000 -0.42159px -1.95506px 0, #000 0.56732px -1.91785px 0, #000 1.41734px -1.41108px 0, #000 1.92034px -0.55883px 0;
+                }
+
+                ul {
+                    display: none;
+                    padding-left: 0;
+
+                    li {
+                        background-color: rgb(85, 19, 7);
+                        text-align: left;
+                        padding-left: 20px;
+                        height: 36px;
+                        line-height: 36px;
+                        font-size: 14px;
+                        color: #8bb6ad;
+
+                        &:first-child {
+                            margin-top: 46px;
+                        }
+
+                        a {
+                            color: rgb(205, 153, 142);
+                        }
+                    }
+                }
+            }
+
+            .right-spite {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 989px;
+                    width: 61px;
+                    height: 51px;
+                    background: url(../images/tjf/spite.png) no-repeat -280px -7px;
+                }
+            }
+        }
+    }
+
+    .content {
+        width: 1024px;
+        margin: 0 auto;
+        display: flex;
+
+        .content-right {
+            z-index: 10;
+            flex: 2;
+            background: url(../images/tjf/bgc1.png) repeat-y;
+            background-size: 693px auto;
+            padding-top: 15px;
+
+            .turnImg {
+                margin: 0 auto;
+                width: 620px;
+                height: 290px;
+                padding: 1px;
+                border: 1px solid #b7894c;
+                position: relative;
+                overflow: hidden;
+
+                .turnImg-Img {
+                    position: absolute;
+                    width: 621*3px;
+                    height: 290px;
+                    transition: all 0.5s linear;
+
+                    li {
+                        margin-right: 1px;
+                        float: left;
+                        width: 620px;
+                        height: 290px;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+
+                        &:nth-of-type(1) {
+                            background-image: url(../images/tjf/大轮播图1.jpg);
+                        }
+
+                        &:nth-of-type(2) {
+                            background-image: url(../images/tjf/大轮播图2.jpg);
+                        }
+
+                        &:nth-of-type(3) {
+                            background-image: url(../images/tjf/大轮播图3.jpg);
+                        }
+                    }
+                }
+
+                .turnImg-button {
+                    position: absolute;
+                    bottom: 1px;
+                    left: 1px;
+                    border-top: 1px solid #8a673b;
+                    width: 620px;
+                    height: 42px;
+                    background: url(../images/tjf/bg1.png) repeat;
+
+                    .text {
+                        float: left;
+                        position: relative;
+                        width: 300px;
+                        height: 42px;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 42px;
+                        overflow: hidden;
+
+                        ul {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+
+                            li {
+                                padding-left: 10px;
+                                color: #FFF;
+                            }
+                        }
+                    }
+
+                    .turnImg-button-Img {
+                        box-sizing: border-box;
+                        padding-top: 6px;
+                        width: 213px;
+                        float: right;
+
+                        li {
+                            float: left;
+                            margin-right: 5px;
+                            border: 1px solid black;
+                            width: 64px;
+                            height: 30px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .newcard {
+                padding: 40px 10px 0px 25px;
+                position: relative;
+
+                ul {
+                    background: url(../images/tjf/bg4.jpg) no-repeat;
+                    height: 211px;
+                    padding-left: 15px;
+                    background-size: 100% 100%;
+
+                    li {
+                        background: url(../images/tjf/bgc3.png);
+                        background-size: 100% 100%;
+                        box-sizing: border-box;
+                        padding: 13px;
+                        height: 205px;
+                        width: 300px;
+                        float: left;
+
+                        p {
+                            font-size: 16px;
+                            text-align: center;
+                            font-weight: 700;
+                            line-height: 42px;
+                            color: #2e1b1e;
+                        }
+
+                        img {
+                            width: 272px;
+                            height: 145px;
+                        }
+
+                        &:nth-of-type(1) {
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+
+            .homenews {
+                padding-left: 30px;
+                padding-right: 20px;
+
+                .news {
+                    padding-top: 35px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid rgb(219, 196, 151);
+
+                    a {
+                        padding-left: 222px;
+                        display: block;
+                        position: relative;
+                        width: 398px;
+                        height: 100px;
+
+                        img {
+                            position: absolute;
+                            left: 0;
+                            width: 200px;
+                            height: 100px;
+                            padding: 1px;
+                            background: #fee0b9;
+                            border: 1px solid #b7894c;
+                        }
+
+                        h4 {
+                            padding: 0 0 10px;
+                            overflow: hidden;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            color: #695745;
+                            height: 38px;
+                            margin-bottom: 20px;
+                            overflow: hidden;
+                        }
+
+                        span {
+                            display: block;
+                            color: #666;
+                            font-size: 12px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content-left {
+            background: url(../images/tjf/bgc5.png);
+            background-size: 100% auto;
+            z-index: 10;
+            flex: 1;
+
+            .download {
+                position: relative;
+                height: 630px;
+                background: url(../images/tjf/bg2.jpg) no-repeat;
+                background-position: 0 -10px;
+                background-size: 96.5%;
+
+                .download-logo {
+                    width: 265.2px;
+                    height: 170px;
+                    position: absolute;
+                    top: 12px;
+                    left: 35px;
+                    display: block;
+                    background: url(../images/tjf/logo2.png);
+                    background-size: 100%;
+                }
+
+                .icon {
+                    position: absolute;
+                    top: 210px;
+                    left: 50px;
+
+                    li {
+                        overflow: hidden;
+                        float: left;
+                        width: 80px;
+                        height: 90px;
+                        background: url(../images/tjf/spite2.png);
+
+                        &:nth-of-type(1) {
+                            background-position: 0 -180px;
+                        }
+
+                        &:nth-of-type(2) {
+                            background-position: -80px -90px;
+                        }
+
+                        &:nth-of-type(3) {
+                            background-position: -160px -90px;
+                        }
+                    }
+                }
+
+                .download-btn {
+                    position: absolute;
+                    top: 320px;
+                    left: 60px;
+
+                    li {
+                        width: 220px;
+                        height: 60px;
+                        overflow: hidden;
+                        background: url(../images/tjf/bgc6.png);
+
+                        &:nth-of-type(1) {
+                            background-position: -29px -362px;
+                            margin-bottom: 6px;
+                        }
+
+                        &:nth-of-type(2) {
+                            background-position: -29px -480px;
+                        }
+                    }
+                }
+            }
+
+            .turnimg {
+                height: 206px;
+                background: url(../images/tjf/bg5.jpg) no-repeat;
+                background-size: 96.5%;
+                padding: 30px 20px;
+
+                h3 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    height: 30px;
+                    color: #03345f;
+
+                    span {
+                        background: url(../images/tjf/spite3.png);
+                        background-position: -87px -4px;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                .turnimg-img {
+                    position: relative;
+                    overflow: hidden;
+                    padding-top: 10px;
+                    margin-left: 20px;
+                    height: 166px;
+                    width: 244px;
+
+                    ul {
+                        position: absolute;
+                        top: 10px;
+                        height: 166px;
+                        width: 488px;
+                        transition: all 0.5s linear;
+
+                        li {
+                            float: left;
+                            width: 244px;
+                            height: 165px;
+
+                            &:nth-of-type(1) {
+                                background: url(../images/tjf/大轮播图4.jpg) no-repeat;
+                            }
+
+                            &:nth-of-type(2) {
+                                background: url(../images/tjf/小轮播图3.PNG) no-repeat;
+                            }
+
+                            img {
+                                transition: all 0.3s linear;
+                            }
+
+                            p {
+                                font-size: 16px;
+                                color: #251c0f;
+                                text-align: center;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .media {
+                height: 206px;
+                background: url(../images/tjf/bg5.jpg) no-repeat;
+                background-size: 96.5%;
+                padding: 30px 20px;
+
+                h3 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    height: 30px;
+                    color: #03345f;
+
+                    span {
+                        background: url(../images/tjf/spite3.png);
+                        background-position: -46px -74px;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                ul {
+                    li {
+                        border-bottom: 1px solid rgb(232, 214, 168);
+                        height: 30px;
+
+                        span {
+                            color: #5B4B38;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+            }
+
+            .recomadation {
+                height: 206px;
+                background: url(../images/tjf/bg5.jpg) no-repeat;
+                background-size: 96.5%;
+                padding: 30px 20px;
+
+                h3 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    height: 30px;
+                    color: #03345f;
+
+                    span {
+                        background: url(../images/tjf/spite3.png);
+                        background-position: -89px -38px;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                ul {
+                    li {
+                        border-bottom: 1px solid rgb(232, 214, 168);
+                        height: 30px;
+
+                        span {
+                            color: #5B4B38;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+            }
+
+            .func {
+                padding-left: 20px;
+
+                .func-son {
+                    position: relative;
+                    border: 1px solid #efd4ad;
+                    width: 256px;
+                    height: 52px;
+                    margin: 10px 0px;
+                    background-color: #d1b181;
+
+                    h4 {
+                        margin: 15px 0 0 20px;
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+
+                    span {
+                        background: url(../images/tjf/spite4.png) no-repeat;
+                        width: 80px;
+                        height: 80px;
+                        position: absolute;
+                        left: 170px;
+                        top: -10px;
+                    }
+                }
+
+                .func-one {
+                    span {
+                        background-position: -0px -278px;
+
+                        &:hover {
+                            background-position: -0px -383px;
+                        }
+                    }
+
+                }
+
+                .func-two {
+                    height: 62px;
+
+                    span {
+                        background-position: -0px -780px;
+
+                        &:hover {
+                            background-position: -0px -905px;
+                        }
+                    }
+                }
+
+                .func-three {
+                    span {
+                        background-position: 0px -1030px;
+                    }
+                }
+
+                .func-four {
+                    span {
+                        background-position: 0px -2180px;
+
+                        &:hover {
+                            background-position: -0px -2292px;
+                        }
+                    }
+                }
+
+                .func-five {
+                    span {
+                        background-position: 0px -1135px;
+
+                        &:hover {
+                            background-position: -0px -1248px;
+                        }
+                    }
+                }
+
+                .func-six {
+                    span {
+                        background-position: 0px -1652px;
+
+                        &:hover {
+                            background-position: -0px -1748px;
+                        }
+                    }
+                }
+
+                .func-seven {
+                    height: 62px;
+
+                    span {
+                        background-position: 0px -2048px;
+                    }
+                }
+
+                .func-eight {
+                    height: 62px;
+
+                    span {
+                        background-position: 0px -516px;
+
+                        &:hover {
+                            background-position: -0px -616px;
+                        }
+                    }
+                }
+
+                .func-nine {
+                    span {
+                        background-position: 0px -1350px;
+
+                        &:hover {
+                            background-position: -0px -1450px;
+                        }
+                    }
+                }
+            }
+
+            .commity {
+                height: 206px;
+                background: url(../images/tjf/bg5.jpg) no-repeat;
+                background-size: 96.5%;
+                padding: 30px 20px;
+
+                h3 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    height: 30px;
+                    color: #03345f;
+
+                    span {
+                        background: url(../images/tjf/spite3.png);
+                        background-position: -0px -189px;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

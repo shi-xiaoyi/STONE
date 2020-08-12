@@ -1,0 +1,435 @@
+
+/* 第一个背景图开始 */
+.box1 {
+    position: relative;
+    top: 0;
+    width: 100%; 
+    height: 914px;
+    background: url('../uploads/tkm/m1.jpg') no-repeat 50% 0;
+    /* background-size: 100%; */
+}
+/* 背景图缩放动画 */
+@keyframes scaleDraw {
+    0% {
+        background-size: 120%;
+    }
+    100% {
+        background-size: 115%;
+    } 
+}
+.bg-1-scale {
+    animation: scaleDraw 10s;
+    animation-fill-mode: forwards;
+}
+/* 背景图bg */
+.bg {
+    position: absolute;
+    top: 0;
+    background: url('../uploads/tkm/bg.png') no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+ }
+ /* 左侧炉石传说图标 */
+ .set-pics h1 {
+    position: absolute;
+    width: 264px;
+    height: 100px;
+    top: 10px;
+    left:250px;
+    background: url('../uploads/tkm/home-v2016.png') no-repeat 0 0;
+    background-size: 264px 139px;
+    z-index: 999;
+}
+/* 上侧图标 */
+.set-pics .nav-top {
+    position: absolute;
+    top:40px;
+    right: 320px;
+    width: 500px;
+    height: 60px;
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+ }
+ .set-pics .nav-top a {
+    color: #fff;
+ }
+ .nav-top .reg,
+ .nav-top .goWeb {
+     display: block;
+     float: left;
+     width: 85px;
+     height: 23px;
+     line-height: 23px;
+     background: url('../images/tkm/sprite.png') no-repeat 0 0;
+     text-align: center;
+     margin-right: 8px;    
+  }
+  .nav-top ul {
+    float: left;
+}
+.nav-top ul li {
+   float: left;
+ }
+ .nav-top ul li:hover {
+    cursor: pointer
+ }
+ .nav-top ul li .weibo,
+ .nav-top ul li .weixin,
+ .nav-top ul li .tieba {
+     display: block;
+     background: url('../images/tkm/sprite.png') no-repeat 0 0;
+     width: 25px;
+     height: 25px;
+     margin-right: 10px;
+     /* hover谁在谁身上加过渡
+      */
+      transition: all .3s linear;
+     
+  }
+  .nav-top ul li .weibo {
+    background-position: -60px -56px;
+  }
+  .nav-top ul li .weixin {
+    background-position: -122px -56px;
+  }
+  .nav-top ul li .tieba {
+      background-position: -153px -56px;
+    }
+/* li的hover后，更改精灵图Y轴位置，当前位置图片更换*/
+.nav-top ul li:nth-child(2):hover a,
+.nav-top ul li:nth-child(3):hover a,
+.nav-top ul li:nth-child(4):hover a{
+   background-position-y: -93px;
+}
+ /* 中间slogan图标 */
+.set-pics .slogan {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -270px;
+    width: 705px;
+    height: 261px;
+    /* background-color: hotpink; */
+    z-index: 999;
+}
+/* 下面下载图标 */
+.set-pics .download {
+    position: absolute;
+    top: 500px;
+    width: 700px;
+    height: 260px;
+    left: 50%;
+    margin-left: -350px;
+    color:#fff;
+    z-index: 999;
+
+}
+.download h3 {
+    font-size: 20px;
+    background: url('../images/tkm/sprite.png') no-repeat 0 -540px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+.download h3 i  {
+    background: url('../images/tkm/sprite.png') no-repeat 0 -916px;
+    width: 64px;
+    height: 20px;
+    display: inline-block;
+    text-indent: -9999px;
+    vertical-align: middle;
+}
+
+.download .app {
+    float: left;
+    height: 220px;
+
+}
+.download .app h3{
+    width: 168px;
+    height: 168px;
+    background: url('../images/tkm/sprite.png') no-repeat 0 -148px;
+    margin-top: 15px;
+    margin-left: 160px;
+}
+.download .app p {
+    font-size: 12px;
+    margin-top:10px;
+    margin-left: 180px;
+}
+.download  .ios {
+    float: left;
+    width: 200px;
+    height: 58px;
+    background: url('../images/tkm/sprite.png') no-repeat 0 -366px;
+    margin: 25px 0 20px 15px;
+}
+.download .ios a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.download  .android  {
+    float: left;
+    width: 200px;
+    height: 60px;
+    background: url('../images/tkm/sprite.png') no-repeat 0 -444px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+.download  p {
+    float: left;
+    width: 200px;
+    font-size: 12px;
+    margin-left: 40px;
+}
+/* 第二个背景图开始 */
+.box2 {
+    position: relative;
+    top: 0;
+    width: 100%; 
+    height: 914px;
+    background: url('../uploads/tkm/m2.jpg') no-repeat 50% 0;
+}
+.box2 .p2 {
+    position: absolute;
+    top: 100px;
+    /* 做动态效果 */
+    left: 150px;
+    width: 478px;
+    height: 913px;
+}
+
+.box2 .t2 {
+    position: absolute;
+    width: 640px;
+    height: 222px;
+    top: 500px;
+   right: 100px;
+}
+.box2  .p2 img,
+.box2  .t2 img {
+    width: 100%;
+    height: 100%;
+}
+.box3 {
+    position: relative;
+    top: 0;
+    width: 100%px; 
+    height: 914px;
+    background: url('../uploads/tkm/m3.jpg') no-repeat 50% 0;
+}
+ .box3 .t3 {
+    position: absolute;
+     top: 400px;
+    left: 150px;
+    width: 640px;
+    height: 224px;
+ }
+.box3 .p3 {
+    position: absolute;
+    width: 478px;
+    height: 913px;
+    top: 50px;
+   right: 100px;
+}
+.box3 .p3 img,
+.box3 .t3 img {
+    width: 100%;
+    height: 100%;
+}
+/* 第四个背景图开始 */
+.box4 {
+    position: relative;
+    top: 0;
+    width: 100%; 
+    height: 914px;
+    background: url('../uploads/tkm/m4.jpg') no-repeat 50% 0;
+}
+.box4 .t4 {
+    position: absolute;
+    width: 493px;
+    height:316px;
+    top: 200px;
+    left: 100px;
+ }
+.box4 .p4 {
+    position: absolute;
+    top: 500px;
+    /* 做动态效果 */
+    left: 50px;
+    width: 910px;
+    height: 473px;
+}
+.box4 img,
+.box4 img {
+    width: 100%;
+    height: 100%;
+}
+/* 第五个背景图开始 */
+.box5 {
+    position: relative;
+    top: 0;
+    width: 100%; 
+    height: 914px;
+    background: url('../uploads/tkm/m5.jpg') no-repeat 50% 0;
+}
+.box5 .t5 {
+    position: absolute;
+     top: 100px;
+    /* 做动态效果 */
+    right: 100px;
+    width: 490px;
+    height: 297px;
+ }
+.box5 .p5 {
+    position: absolute;
+    width: 478px;
+    height: 516px;
+    top: 400px;
+   right: 100px;
+}
+.box5 img,
+.box5 img {
+    width: 100%;
+    height: 100%;
+}
+/* 侧边点定位 */
+.sidePoint {
+    z-index: 999;
+    position: fixed;
+    right: 50px;
+    top:300px;
+    font-size: 24px;
+}  
+.sidePoint li  {
+    position: relative;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-top: 30px;
+    cursor: pointer;
+ }
+ .sidePoint li span {
+     font-size: 20px;
+     position: absolute;
+     right: 20px;
+     top:-15px; 
+     width: 50px;
+     height: 10px;
+     color: #fff;
+     display: none;
+ }
+ /* 鼠标hover span 显示， */
+ /* 鼠标点击active,sapn显示 */
+  .sidePoint li:hover span{
+     display: block;
+ } 
+  .sidePoint li:hover span {
+     display: block;
+ }  
+/* 6.底部区域 */
+.box6 {
+    width: 100%;
+    /* height: 300px; */
+    background-color:pink ;
+}
+/* 7.底部下载固定栏  */
+.go-download {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 240px;
+    background: url('../images/tkm/download-bg.png') no-repeat 0 0;
+    background-size: 100%;
+    padding-top: 20px;
+    color: #fff;
+    display: none;
+}
+.go-download h4 {
+    position: absolute;
+    top: 80px;
+    left:250px;
+    width: 80px;
+    height: 80px;
+    background: url('../images/tkm/sprite.png') no-repeat 0 -598px;
+}
+.go-download .middle {
+    position: absolute;
+    top: 90px;
+    left:320px;
+    width: 500px;
+    height: 90px;
+    text-align: center;
+}
+.middle .top {
+    font-size: 20px;
+}
+.beta {
+    display: inline-block;
+    width: 64px;
+    height: 20px;
+    text-indent: -9999px;
+    background: url('../images/tkm/sprite.png') no-repeat 0 -916px;
+    vertical-align: middle;
+}
+.middle .bottom {
+    font-size: 26px;
+    font-weight: 800;
+    color: #e1d0a9;
+}
+.code {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    left: 750px;
+    text-align: center;
+}
+.code .app-pic {
+    width: 168px;
+    height: 168px;
+    background: url('../images/tkm/sprite.png') no-repeat 0 -138px;
+    margin: 5px auto 20px;
+}
+.button {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left:980px;
+    text-align: center;
+
+}
+.button .ios {   
+    width: 200px;
+    height: 58px;
+    background: url('../images/tkm/sprite.png') no-repeat 0 -366px;
+    margin-top: 15px;
+}
+.button .android {
+    width: 200px;
+    height: 58px;
+    background: url('../images/tkm/sprite.png') no-repeat 0 -444px;
+    margin-top: 20px;
+}
+.button .ios a,
+.button .android a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.go-download .close {
+    position: absolute;
+    display: block;
+    background: url('../images/tkm/sprite.png') no-repeat 2px -707px;
+    right: 240px;
+    top: 15px;
+    width: 33px;
+    font-size: 14px;
+    padding-top: 35px;
+    color: #e1d0aa;
+}
+

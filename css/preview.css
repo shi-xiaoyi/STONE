@@ -1,0 +1,329 @@
+body {
+  background: url(../images/sxy/bgc.jpg) no-repeat;
+  background-size: contain;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+  /* transform-style: preserve-3d; */
+  /* perspective: 500; */
+  /* min-width: 1600px; */
+}
+
+.banner {
+  max-width: 1500px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px;
+  /* max-height: 600px; */
+  /* margin-top: 50px; */
+}
+
+.header-logo a {
+  display: block;
+}
+
+.header-logo .sell {
+  position: relative;
+  width: 400px;
+  height: 160px;
+}
+
+.header-logo img {
+  width: 400px;
+}
+
+.sell div {
+  /* overflow: hidden; */
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+
+.sell .bg1 {
+  background: url(../images/sxy/kuang.png) no-repeat;
+}
+
+.sell .bg2 {
+  background: url(../images/sxy/kuang2.png) no-repeat;
+}
+
+.sell .link {
+  z-index: 2;
+  width: 295px;
+  height: 65px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 0;
+  transform: translate(-50%, -50%);
+  border: 10px solid #6c5440;
+  border-radius: 5px;
+  color: white;
+  text-indent: 150px;
+  line-height: 46px;
+  font-weight: 700;
+  font-size: 18px;
+  background: url(../images/sxy/xian.png);
+  text-shadow: 0 0 4px #000, 0 0 8px #000;
+  opacity: 0.5;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+
+.sell .bao {
+  position: absolute;
+  z-index: 5;
+  width: 150px;
+  left: 40px;
+  top: -10px;
+}
+
+.sell .bao img {
+  width: 100%;
+}
+
+.top-nav {
+  margin-top: 50px;
+  height: 70px;
+  position: relative;
+}
+
+.top {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  height: 70px;
+  background: url(../images/sxy/zhong.png) repeat-x;
+}
+
+.top-nav ul {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+}
+
+.top-nav li {
+  width: 80px;
+  cursor: pointer;
+  height: 66px;
+  margin: 0 5px;
+
+  /* background-color: yellow; */
+  background: url(../images/sxy/big.png) no-repeat;
+}
+
+.current {
+  transform: scale(1.2);
+}
+
+.top-nav li a {
+  display: block;
+  height: 100%;
+}
+
+.big-banner {
+  /* background-color: #e7d2a7; */
+  background: -webkit-linear-gradient(left, #e8d3a6, #e7d4a8);
+  overflow: hidden;
+}
+
+.contanier {
+  max-width: 1500px;
+  margin: 0 auto;
+  /* background-color: pink; */
+}
+
+.contanier h1 {
+  width: 305px;
+  height: 84px;
+  margin: 0 auto;
+  background: url(../images/sxy/big.png) no-repeat;
+  background-position: 0px -298px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 84px;
+  font-size: 14px;
+}
+
+.contanier ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contanier ul li {
+  width: 232px;
+  height: 329px;
+  margin: 20px;
+}
+
+.contanier ul li img {
+  width: 100%;
+}
+
+.mask {
+  display: none;
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+}
+
+.none {
+  display: none !important;
+}
+
+.xiangqing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+}
+
+.xiangqing .close {
+  width: 43px;
+  height: 43px;
+  /* background-color: red; */
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: 0;
+  background: url(../images/sxy/mask.png) no-repeat -85px 0;
+}
+
+.xiangqing .close:hover {
+  background-position: -74px -118px;
+}
+
+.xiangqing p {
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.explain {
+  display: flex;
+  width: 775px;
+  height: 518px;
+}
+
+.xiangqing .text {
+  padding-top: 65px;
+  flex: 1;
+}
+
+.xiangqing .text h1 {
+  color: white;
+  font-size: 32px;
+  /* font-weight: 700; */
+  font-style: italic;
+}
+
+.xiangqing .text h3 {
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.xiangqing .left,
+.xiangqing .right {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border: 0;
+
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../images/sxy/mask.png) no-repeat 0 -45px;
+}
+
+.xiangqing .left {
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.xiangqing .right {
+  right: 290px;
+  transform: translateY(-50%);
+  background-position: -46px -45px;
+}
+
+/* 侧边栏 */
+.list-nav {
+  /* overflow: hidden; */
+  z-index: 999;
+  width: 82px;
+  height: 82px;
+  position: fixed;
+  right: 30px;
+  bottom: 65px;
+  border-radius: 50%;
+  font-size: 15px;
+  line-height: 82px;
+  text-align: center;
+  color: #ffb100;
+  font-weight: 700;
+  background-color: rgba(96, 52, 18, .6);
+}
+
+.list-nav img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#plug-in {
+  bottom: 395px;
+}
+
+#mobile-app {
+  perspective: 500;
+  bottom: 285px;
+
+}
+
+.fanzhuang {
+  position: relative;
+  height: 100%;
+  /* background-color: green; */
+  transform-style: preserve-3d;
+  transition: all 1s;
+}
+
+#mobile-app img:first-child {
+  /* display: none; */
+  transform: translateZ(42px);
+  z-index: 2;
+}
+
+#mobile-app img:last-child {
+  /* display: none; */
+  transform: translateY(41px) rotateX(90deg);
+}
+
+.roll {
+  transform: rotateX(90deg)
+}
+
+#weibo {
+  bottom: 175px;
+}

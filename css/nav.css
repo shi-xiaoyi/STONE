@@ -1,0 +1,89 @@
+.nav {
+    position: relative;
+    margin: 0 auto;
+    width: 1024px;
+    z-index: 100;
+}
+
+body .nav .spite {
+    position: absolute;
+    top: -14px;
+    left: -27px;
+    width: 75px;
+    height: 75px;
+    background: url(../images/tjf/spite.png) no-repeat -169px -40px;
+    z-index: 10;
+}
+
+body .nav ul {
+    background: url(../images/tjf/table.jpg) no-repeat 0 0px;
+    padding-left: 50px;
+}
+
+body .nav ul .left-spite::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -38px;
+    width: 100px;
+    height: 150px;
+    background: url(../images/tjf/spite.png) no-repeat 0px 0px;
+}
+
+body .nav ul .nav-li {
+    float: left;
+    height: 51px;
+    width: 117.5px;
+}
+
+body .nav ul .nav-li:nth-of-type(2) {
+    position: relative;
+}
+
+body .nav ul .nav-li .new {
+    border-image: url(../images/tjf/button.png) 6 fill / auto;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+    color: #fff;
+    width: 42px;
+    height: 26px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 26px;
+    text-shadow: #000 2px 0 0, #000 1.75517px 0.95885px 0, #000 1.0806px 1.68294px 0, #000 0.14147px 1.99499px 0, #000 -0.83229px 1.81859px 0, #000 -1.60229px 1.19694px 0, #000 -1.97998px 0.28224px 0, #000 -1.87291px -0.70157px 0, #000 -1.30729px -1.5136px 0, #000 -0.42159px -1.95506px 0, #000 0.56732px -1.91785px 0, #000 1.41734px -1.41108px 0, #000 1.92034px -0.55883px 0;
+}
+
+body .nav ul .nav-li ul {
+    display: none;
+    padding-left: 0;
+}
+
+body .nav ul .nav-li ul li {
+    background-color: #551307;
+    text-align: left;
+    padding-left: 20px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #8bb6ad;
+}
+
+body .nav ul .nav-li ul li:first-child {
+    margin-top: 46px;
+}
+
+body .nav ul .nav-li ul li a {
+    color: #cd998e;
+}
+
+body .nav ul .right-spite::after {
+    content: '';
+    position: absolute;
+    left: 989px;
+    width: 61px;
+    height: 51px;
+    background: url(../images/tjf/spite.png) no-repeat -280px -7px;
+}

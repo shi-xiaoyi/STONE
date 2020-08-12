@@ -1,0 +1,177 @@
+.w {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.rotate {
+  transform: rotateX(180deg);
+}
+.header-nav {
+  font-size: 16px;
+  height: 40px;
+  background-color: #2c0903;
+  color: #a8b6a9;
+}
+.header-nav .w {
+  height: 100%;
+  line-height: 40px;
+}
+.header-nav .w .logo {
+  margin-top: 4px;
+  float: left;
+  width: 65px;
+  height: 32px;
+  background: url(../images/sxy/01.png) no-repeat -16px -80px;
+}
+.header-nav .w ul {
+  float: left;
+}
+.header-nav .w ul li {
+  margin-left: 30px;
+  float: left;
+}
+.header-nav .w ul li a {
+  display: inline-block;
+}
+.header-nav .w ul li a:hover {
+  color: white;
+}
+.header-nav .w ul li i {
+  width: 12px;
+  height: 9px;
+  display: inline-block;
+  background: url(../images/sxy/01.png) no-repeat -146px -130px;
+}
+.header-nav .w #header-right {
+  float: right;
+}
+.gamelist {
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  display: none;
+  background-color: #151a23;
+  border: 1px solid #666666;
+}
+.gamelist .game {
+  display: flex;
+  height: 250px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.gamelist .game a {
+  margin: 0 10px;
+  flex: 1;
+  overflow: hidden;
+}
+.gamelist .game a img {
+  opacity: 0.7;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  vertical-align: middle;
+}
+.gamelist .game a img:hover {
+  opacity: 1;
+}
+.gameMatch {
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  display: none;
+  background-color: #191e28;
+  border: 1px solid #666666;
+}
+.gameMatch .match ul {
+  height: 275px;
+  display: flex;
+  justify-content: center;
+}
+.gameMatch .match ul li {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+.gameMatch .match ul li .left,
+.gameMatch .match ul li .right {
+  float: left;
+  height: 100%;
+}
+.gameMatch .match ul li .left img {
+  width: 192px;
+}
+.gameMatch .match ul li .right {
+  display: flex;
+  background-color: #151a23;
+  width: 0px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.gameMatch .match ul li .right img {
+  opacity: 0.8;
+  width: 100%;
+}
+.gameMatch .match ul li .right img:hover {
+  opacity: 1;
+}
+.gameMatch .title {
+  height: 50px;
+  border: 1px solid #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+.gameMatch .title span {
+  opacity: 0;
+  margin: 0 10px;
+}
+#user {
+  z-index: 5;
+  width: 320px;
+  height: 160px;
+  position: absolute;
+  background-color: #1f2836;
+  right: 56px;
+  border: 1px solid #3b4149;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#user .login a {
+  display: block;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #0e86ca;
+  color: white;
+  margin: 20px;
+}
+#user .zhanghu,
+#user .zhuce {
+  border: 1px solid #3b4149;
+  padding: 0 20px;
+}
+#user .zhanghu::before,
+#user .zhuce::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  margin: 0 5px;
+}
+#user .zhuce::before {
+  position: relative;
+  top: 2px;
+  background: url(../images/sxy/01.png) no-repeat -200px -14px;
+}
+#user .zhanghu::before {
+  position: relative;
+  top: 4px;
+  background: url(../images/sxy/01.png) no-repeat -142px -14px;
+}

@@ -1,0 +1,54 @@
+body, html,div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    line-height: 1;
+    }
+    p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+    body {
+    font-size:16px;
+    color:#666;
+    font-family: Microsoft YaHei,SimSun;
+    }
+    textarea,
+    input,
+    button,
+    select {
+    outline: none;
+    }
+    li {
+    list-style: none;
+    }
+    img {
+    border: 0;
+    }
+    a{
+    color:#666;
+    text-decoration: none;
+    }
+    
+    a:hover {
+    color:#666;
+    text-decoration: none;
+    }
+    /* /内容超出隐藏/ */
+    .txt_overflow{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    /* /清除浮动/ */
+    .clearfix::after {
+    content: ".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility: hidden;
+    }
+  
